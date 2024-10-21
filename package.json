@@ -1,0 +1,33 @@
+{
+  "name": "ftrx_lending",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/wallet-adapter-vue": "^0.4.5",
+    "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.95.4",
+    "solana-wallets-vue": "^0.6.1",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.16.11",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^6.2.3",
+    "typescript": "~5.5.4",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  }
+}
